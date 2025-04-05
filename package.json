@@ -1,0 +1,8 @@
+{
+  "name": "uwsjs",
+  "private": true,
+  "workspaces": ["packages/*"],
+  "devDependencies": {
+    "@es-proj/utils": "^1.6.4"
+  }
+}

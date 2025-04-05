@@ -1,0 +1,11 @@
+{
+  "name": "@uwsjs/template",
+  "version": "",
+  "license": "Apache-2.0",
+  "main": "./index.js",
+  "os": [],
+  "cpu": [],
+  "engines": {
+    "node": ""
+  }
+}
