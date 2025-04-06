@@ -1,12 +1,12 @@
 import { $ } from 'bun';
 
 export async function fetchSrc() {
-  const commit = Bun.file('source_commit').text();
-  const res = fetch(
+  const commit = await Bun.file('source_commit').text();
+  const res = await fetch(
     'https://raw.githubusercontent.com/uNetworking/uWebSockets.js/refs/heads/binaries/source_commit',
   ).then((res) => res.text());
 
-  if ((await commit) === (await res)) {
+  if (commit === res) {
     console.log('No update');
     process.exit(0);
   }
