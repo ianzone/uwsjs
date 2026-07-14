@@ -13,7 +13,7 @@ jobs:
   release:
     runs-on: ubuntu-latest
     env:
-      NPM_TOKEN: ${{ secrets.NPM_CONFIG_TOKEN }}
+      NPM_CONFIG_TOKEN: ${{ secrets.NPM_CONFIG_TOKEN }}
 
     steps:
       - uses: actions/checkout@v7
