@@ -1,6 +1,5 @@
 import { run } from '@es-proj/utils/bun';
 import { readPkgJSON } from '@es-proj/utils/node';
-import { makeBin } from './makeBin';
 
 const coreDir = `${process.cwd()}/packages/core`;
 const pkgJsonDir = `${coreDir}/package.json`;
@@ -17,14 +16,21 @@ export async function makeCore() {
     release: 'bun publish --access public',
   };
   pkg.optionalDependencies = {};
-  const binPaths = (await run(`ls ${coreDir}/uws_*.node`)).stdout.split('\n');
-  for (const binPath of binPaths) {
-    const peer = await makeBin(binPath, pkg.version as string);
-    await Bun.write(`${binPath}.js`, `module.exports = require('${peer}');`);
-    pkg.optionalDependencies[peer] = pkg.version;
+  const packages = (await run(`ls ${process.cwd()}/packages`)).stdout.split('\n');
+
+  for (const peerPkg of packages) {
+    if (peerPkg === 'core') continue;
+    pkg.optionalDependencies[`@uwsjs/${peerPkg}`] = pkg.version;
   }
 
   await Bun.write(pkgJsonDir, JSON.stringify(pkg, null, 2));
+
+  const code = await Bun.file(`${coreDir}/uws.js`).text();
+  const uws = code.replace(
+    `'./uws_' + process.platform + '_' + process.arch + '_' + process.versions.modules + '.node'`,
+    `'@uwsjs/' + process.platform + '-' + process.arch + '-' + process.versions.node.split('.')[0]`,
+  );
+
+  await Bun.write(`${coreDir}/uws.js`, uws);
   await run(`cp ${coreDir}/source_commit .`);
 }
-makeCore();

@@ -1,8 +1,18 @@
 {
   "name": "uwsjs",
   "private": true,
-  "workspaces": ["packages/*"],
+  "scripts": {
+    "lint": "biome check --fix .",
+    "build": "bun index.ts",
+    "release": "bun run --filter '*' release"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
-    "@es-proj/utils": "^1.6.4"
+    "@biomejs/biome": "^2.5.3",
+    "@es-proj/utils": "^2.0.1",
+    "@types/node-abi": "^3.0.3",
+    "node-abi": "^4.33.0"
   }
 }
