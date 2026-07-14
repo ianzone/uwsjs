@@ -5,14 +5,91 @@
     "": {
       "name": "uws",
       "devDependencies": {
-        "@biomejs/biome": "^2.5.3",
-        "@es-proj/utils": "^2.0.1",
-        "@types/node-abi": "^3.0.3",
-        "node-abi": "^4.33.0",
+        "@biomejs/biome": "latest",
+        "@es-proj/utils": "latest",
+        "@types/node-abi": "latest",
+        "node-abi": "latest",
       },
     },
     "packages/core": {
-      "name": "uWebSockets.js",
+      "name": "@uwsjs/core",
+      "version": "20.69.0",
+      "optionalDependencies": {
+        "@uwsjs/darwin-arm64-22": "20.69.0",
+        "@uwsjs/darwin-arm64-24": "20.69.0",
+        "@uwsjs/darwin-arm64-26": "20.69.0",
+        "@uwsjs/darwin-x64-22": "20.69.0",
+        "@uwsjs/darwin-x64-24": "20.69.0",
+        "@uwsjs/darwin-x64-26": "20.69.0",
+        "@uwsjs/linux-arm64-22": "20.69.0",
+        "@uwsjs/linux-arm64-24": "20.69.0",
+        "@uwsjs/linux-arm64-26": "20.69.0",
+        "@uwsjs/linux-x64-22": "20.69.0",
+        "@uwsjs/linux-x64-24": "20.69.0",
+        "@uwsjs/linux-x64-26": "20.69.0",
+        "@uwsjs/win32-x64-22": "20.69.0",
+        "@uwsjs/win32-x64-24": "20.69.0",
+        "@uwsjs/win32-x64-26": "20.69.0",
+      },
+    },
+    "packages/darwin-arm64-22": {
+      "name": "@uwsjs/darwin-arm64-22",
+      "version": "20.69.0",
+    },
+    "packages/darwin-arm64-24": {
+      "name": "@uwsjs/darwin-arm64-24",
+      "version": "20.69.0",
+    },
+    "packages/darwin-arm64-26": {
+      "name": "@uwsjs/darwin-arm64-26",
+      "version": "20.69.0",
+    },
+    "packages/darwin-x64-22": {
+      "name": "@uwsjs/darwin-x64-22",
+      "version": "20.69.0",
+    },
+    "packages/darwin-x64-24": {
+      "name": "@uwsjs/darwin-x64-24",
+      "version": "20.69.0",
+    },
+    "packages/darwin-x64-26": {
+      "name": "@uwsjs/darwin-x64-26",
+      "version": "20.69.0",
+    },
+    "packages/linux-arm64-22": {
+      "name": "@uwsjs/linux-arm64-22",
+      "version": "20.69.0",
+    },
+    "packages/linux-arm64-24": {
+      "name": "@uwsjs/linux-arm64-24",
+      "version": "20.69.0",
+    },
+    "packages/linux-arm64-26": {
+      "name": "@uwsjs/linux-arm64-26",
+      "version": "20.69.0",
+    },
+    "packages/linux-x64-22": {
+      "name": "@uwsjs/linux-x64-22",
+      "version": "20.69.0",
+    },
+    "packages/linux-x64-24": {
+      "name": "@uwsjs/linux-x64-24",
+      "version": "20.69.0",
+    },
+    "packages/linux-x64-26": {
+      "name": "@uwsjs/linux-x64-26",
+      "version": "20.69.0",
+    },
+    "packages/win32-x64-22": {
+      "name": "@uwsjs/win32-x64-22",
+      "version": "20.69.0",
+    },
+    "packages/win32-x64-24": {
+      "name": "@uwsjs/win32-x64-24",
+      "version": "20.69.0",
+    },
+    "packages/win32-x64-26": {
+      "name": "@uwsjs/win32-x64-26",
       "version": "20.69.0",
     },
   },
@@ -41,6 +118,38 @@
 
     "@types/node-abi": ["@types/node-abi@3.0.3", "https://registry.npmmirror.com/@types/node-abi/-/node-abi-3.0.3.tgz", {}, "sha512-5oos6sivyXcDEuVC5oX3+wLwfgrGZu4NIOn826PGAjPCHsqp2zSPTGU7H1Tv+GZBOiDUY3nBXY1MdaofSEt4fw=="],
 
+    "@uwsjs/core": ["@uwsjs/core@workspace:packages/core"],
+
+    "@uwsjs/darwin-arm64-22": ["@uwsjs/darwin-arm64-22@workspace:packages/darwin-arm64-22"],
+
+    "@uwsjs/darwin-arm64-24": ["@uwsjs/darwin-arm64-24@workspace:packages/darwin-arm64-24"],
+
+    "@uwsjs/darwin-arm64-26": ["@uwsjs/darwin-arm64-26@workspace:packages/darwin-arm64-26"],
+
+    "@uwsjs/darwin-x64-22": ["@uwsjs/darwin-x64-22@workspace:packages/darwin-x64-22"],
+
+    "@uwsjs/darwin-x64-24": ["@uwsjs/darwin-x64-24@workspace:packages/darwin-x64-24"],
+
+    "@uwsjs/darwin-x64-26": ["@uwsjs/darwin-x64-26@workspace:packages/darwin-x64-26"],
+
+    "@uwsjs/linux-arm64-22": ["@uwsjs/linux-arm64-22@workspace:packages/linux-arm64-22"],
+
+    "@uwsjs/linux-arm64-24": ["@uwsjs/linux-arm64-24@workspace:packages/linux-arm64-24"],
+
+    "@uwsjs/linux-arm64-26": ["@uwsjs/linux-arm64-26@workspace:packages/linux-arm64-26"],
+
+    "@uwsjs/linux-x64-22": ["@uwsjs/linux-x64-22@workspace:packages/linux-x64-22"],
+
+    "@uwsjs/linux-x64-24": ["@uwsjs/linux-x64-24@workspace:packages/linux-x64-24"],
+
+    "@uwsjs/linux-x64-26": ["@uwsjs/linux-x64-26@workspace:packages/linux-x64-26"],
+
+    "@uwsjs/win32-x64-22": ["@uwsjs/win32-x64-22@workspace:packages/win32-x64-22"],
+
+    "@uwsjs/win32-x64-24": ["@uwsjs/win32-x64-24@workspace:packages/win32-x64-24"],
+
+    "@uwsjs/win32-x64-26": ["@uwsjs/win32-x64-26@workspace:packages/win32-x64-26"],
+
     "balanced-match": ["balanced-match@4.0.4", "https://registry.npmmirror.com/balanced-match/-/balanced-match-4.0.4.tgz", {}, "sha512-BLrgEcRTwX2o6gGxGOCNyMvGSp35YofuYzw9h1IMTRmKqttAZZVU67bdb9Pr2vUHA8+j3i2tJfjO6C6+4myGTA=="],
 
     "brace-expansion": ["brace-expansion@5.0.7", "https://registry.npmmirror.com/brace-expansion/-/brace-expansion-5.0.7.tgz", { "dependencies": { "balanced-match": "^4.0.2" } }, "sha512-7oFy703dxfY3/NLxC1fh2SUCQ0H9rmAY+5EpDVfXjUTTs+HEwR2nYaqLv+GWcTsumwxPfiz6CzCNkwXwBUwqCA=="],
@@ -62,7 +171,5 @@
     "tagged-tag": ["tagged-tag@1.0.0", "https://registry.npmmirror.com/tagged-tag/-/tagged-tag-1.0.0.tgz", {}, "sha512-yEFYrVhod+hdNyx7g5Bnkkb0G6si8HJurOoOEgC8B/O0uXLHlaey/65KRv6cuWBNhBgHKAROVpc7QyYqE5gFng=="],
 
     "type-fest": ["type-fest@5.8.0", "https://registry.npmmirror.com/type-fest/-/type-fest-5.8.0.tgz", { "dependencies": { "tagged-tag": "^1.0.0" } }, "sha512-YGYEVz3Fm5iy/AybuA0oyNFq7H4CgQNfRp/qfe8nurE1kuCeNm3/vfm9X4Mtl+qLyaKJUh5xrFZwogr41SMjYA=="],
-
-    "uWebSockets.js": ["uWebSockets.js@workspace:packages/core"],
   }
 }
