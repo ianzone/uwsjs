@@ -13,7 +13,7 @@ export async function makeCore() {
     url: 'git+https://github.com/ianzone/uwsjs.git',
   };
   pkg.scripts = {
-    release: 'bun publish --access public',
+    release: 'npm publish --provenance --access public',
   };
   pkg.optionalDependencies = {};
   const packages = (await run(`ls ${process.cwd()}/packages`)).stdout.split('\n');

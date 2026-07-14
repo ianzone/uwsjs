@@ -23,7 +23,7 @@ export async function makeBin() {
     pkg.version = readPkgJSON(pkgJsonDir).version;
     pkg.files = ['index.js', 'uws.node'];
     pkg.scripts = {
-      release: 'bun publish --access public',
+      release: 'npm publish --provenance --access public',
     };
     pkg.os = [platform];
     pkg.cpu = [arch];
