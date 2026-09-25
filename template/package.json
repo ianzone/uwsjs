@@ -2,6 +2,10 @@
   "name": "@uwsjs/template",
   "version": "",
   "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ianzone/uwsjs.git"
+  },
   "main": "./index.js",
   "os": [],
   "cpu": [],
