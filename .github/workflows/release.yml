@@ -2,26 +2,36 @@ name: Release
 on:
   push:
     branches: [main]
+  schedule:
+    - cron: '23 4 * * *'
+  workflow_dispatch:
 
 permissions:
   id-token: write
-  contents: write
-  issues: write
-  pull-requests: write
+  contents: read
+
+concurrency: release
 
 jobs:
   release:
     runs-on: ubuntu-latest
-    env:
-      NPM_CONFIG_TOKEN: ${{ secrets.NPM_CONFIG_TOKEN }}
 
     steps:
       - uses: actions/checkout@v7
         with:
           fetch-depth: 0
+      # npm >= 11.5.1 is needed for trusted publishing (OIDC)
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
       - uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
       - run: bun i --ignore-scripts
       - run: bun run build
-      - run: bun run release
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+      - run: bun release.ts
+        env:
+          # Optional, when set it is used instead of trusted publishing (OIDC)
+          NPM_CONFIG_TOKEN: ${{ secrets.NPM_CONFIG_TOKEN }}

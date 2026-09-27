@@ -32,5 +32,4 @@ export async function makeCore() {
   );
 
   await Bun.write(`${coreDir}/uws.js`, uws);
-  await run(`cp ${coreDir}/source_commit .`);
 }
