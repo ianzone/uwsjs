@@ -10,9 +10,9 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@biomejs/biome": "^2.5.3",
+    "@biomejs/biome": "^2.5.14",
     "@es-proj/utils": "^2.0.1",
     "@types/node-abi": "^3.0.3",
-    "node-abi": "^4.33.0"
+    "node-abi": "^4.35.0"
   }
 }

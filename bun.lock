@@ -5,120 +5,101 @@
     "": {
       "name": "uws",
       "devDependencies": {
-        "@biomejs/biome": "latest",
-        "@es-proj/utils": "latest",
-        "@types/node-abi": "latest",
-        "node-abi": "latest",
+        "@biomejs/biome": "^2.5.14",
+        "@es-proj/utils": "^2.0.1",
+        "@types/node-abi": "^3.0.3",
+        "node-abi": "^4.35.0",
       },
     },
     "packages/core": {
-      "name": "@uwsjs/core",
-      "version": "20.69.0",
-      "optionalDependencies": {
-        "@uwsjs/darwin-arm64-22": "20.69.0",
-        "@uwsjs/darwin-arm64-24": "20.69.0",
-        "@uwsjs/darwin-arm64-26": "20.69.0",
-        "@uwsjs/darwin-x64-22": "20.69.0",
-        "@uwsjs/darwin-x64-24": "20.69.0",
-        "@uwsjs/darwin-x64-26": "20.69.0",
-        "@uwsjs/linux-arm64-22": "20.69.0",
-        "@uwsjs/linux-arm64-24": "20.69.0",
-        "@uwsjs/linux-arm64-26": "20.69.0",
-        "@uwsjs/linux-x64-22": "20.69.0",
-        "@uwsjs/linux-x64-24": "20.69.0",
-        "@uwsjs/linux-x64-26": "20.69.0",
-        "@uwsjs/win32-x64-22": "20.69.0",
-        "@uwsjs/win32-x64-24": "20.69.0",
-        "@uwsjs/win32-x64-26": "20.69.0",
-      },
+      "name": "uWebSockets.js",
+      "version": "20.71.0",
     },
     "packages/darwin-arm64-22": {
       "name": "@uwsjs/darwin-arm64-22",
-      "version": "20.69.0",
+      "version": "20.71.0",
     },
     "packages/darwin-arm64-24": {
       "name": "@uwsjs/darwin-arm64-24",
-      "version": "20.69.0",
+      "version": "20.71.0",
     },
     "packages/darwin-arm64-26": {
       "name": "@uwsjs/darwin-arm64-26",
-      "version": "20.69.0",
+      "version": "20.71.0",
     },
     "packages/darwin-x64-22": {
       "name": "@uwsjs/darwin-x64-22",
-      "version": "20.69.0",
+      "version": "20.71.0",
     },
     "packages/darwin-x64-24": {
       "name": "@uwsjs/darwin-x64-24",
-      "version": "20.69.0",
+      "version": "20.71.0",
     },
     "packages/darwin-x64-26": {
       "name": "@uwsjs/darwin-x64-26",
-      "version": "20.69.0",
+      "version": "20.71.0",
     },
     "packages/linux-arm64-22": {
       "name": "@uwsjs/linux-arm64-22",
-      "version": "20.69.0",
+      "version": "20.71.0",
     },
     "packages/linux-arm64-24": {
       "name": "@uwsjs/linux-arm64-24",
-      "version": "20.69.0",
+      "version": "20.71.0",
     },
     "packages/linux-arm64-26": {
       "name": "@uwsjs/linux-arm64-26",
-      "version": "20.69.0",
+      "version": "20.71.0",
     },
     "packages/linux-x64-22": {
       "name": "@uwsjs/linux-x64-22",
-      "version": "20.69.0",
+      "version": "20.71.0",
     },
     "packages/linux-x64-24": {
       "name": "@uwsjs/linux-x64-24",
-      "version": "20.69.0",
+      "version": "20.71.0",
     },
     "packages/linux-x64-26": {
       "name": "@uwsjs/linux-x64-26",
-      "version": "20.69.0",
+      "version": "20.71.0",
     },
     "packages/win32-x64-22": {
       "name": "@uwsjs/win32-x64-22",
-      "version": "20.69.0",
+      "version": "20.71.0",
     },
     "packages/win32-x64-24": {
       "name": "@uwsjs/win32-x64-24",
-      "version": "20.69.0",
+      "version": "20.71.0",
     },
     "packages/win32-x64-26": {
       "name": "@uwsjs/win32-x64-26",
-      "version": "20.69.0",
+      "version": "20.71.0",
     },
   },
   "packages": {
-    "@biomejs/biome": ["@biomejs/biome@2.5.3", "https://registry.npmmirror.com/@biomejs/biome/-/biome-2.5.3.tgz", { "optionalDependencies": { "@biomejs/cli-darwin-arm64": "2.5.3", "@biomejs/cli-darwin-x64": "2.5.3", "@biomejs/cli-linux-arm64": "2.5.3", "@biomejs/cli-linux-arm64-musl": "2.5.3", "@biomejs/cli-linux-x64": "2.5.3", "@biomejs/cli-linux-x64-musl": "2.5.3", "@biomejs/cli-win32-arm64": "2.5.3", "@biomejs/cli-win32-x64": "2.5.3" }, "bin": { "biome": "bin/biome" } }, "sha512-MrJswFdei9EfDwwUy2tQrPDpK0AO+RmMFvBoaaJ6ayBc3sUbHdCE+XG5N8vp+5So41ZupZJQm0roHFFhMGVD7A=="],
+    "@biomejs/biome": ["@biomejs/biome@2.5.14", "http://192.168.3.29:34685/@biomejs/biome/-/biome-2.5.14.tgz", { "optionalDependencies": { "@biomejs/cli-darwin-arm64": "2.5.14", "@biomejs/cli-darwin-x64": "2.5.14", "@biomejs/cli-linux-arm64": "2.5.14", "@biomejs/cli-linux-arm64-musl": "2.5.14", "@biomejs/cli-linux-x64": "2.5.14", "@biomejs/cli-linux-x64-musl": "2.5.14", "@biomejs/cli-win32-arm64": "2.5.14", "@biomejs/cli-win32-x64": "2.5.14" }, "bin": { "biome": "bin/biome" } }, "sha512-0FabLIjd4M/dm8VFI86RMaLLdgepzbdfiAL2R8cr7V81OYYrP1w7Z73KfAwPK5h9SrEBXTzNG2y+mBwPo9xRnw=="],
 
-    "@biomejs/cli-darwin-arm64": ["@biomejs/cli-darwin-arm64@2.5.3", "https://registry.npmmirror.com/@biomejs/cli-darwin-arm64/-/cli-darwin-arm64-2.5.3.tgz", { "os": "darwin", "cpu": "arm64" }, "sha512-QhYP9muVQ0nUO5zztFuPbEwi4+94sJWVjaZds9aMi1l/KNZBiUjdiSUrGHsTaMGDXrYl+r4AS2sUKfgH3w+V3g=="],
+    "@biomejs/cli-darwin-arm64": ["@biomejs/cli-darwin-arm64@2.5.14", "http://192.168.3.29:34685/@biomejs/cli-darwin-arm64/-/cli-darwin-arm64-2.5.14.tgz", { "os": "darwin", "cpu": "arm64" }, "sha512-UnzaXO65L4tsZimFITFP2M121GyhDcWFrT3pL5ZJ5U4XcS/0L5VHYytVohdCf/gnDUFHgl2I9xnt5bV/J1kxHQ=="],
 
-    "@biomejs/cli-darwin-x64": ["@biomejs/cli-darwin-x64@2.5.3", "https://registry.npmmirror.com/@biomejs/cli-darwin-x64/-/cli-darwin-x64-2.5.3.tgz", { "os": "darwin", "cpu": "x64" }, "sha512-NC1Ss13UaW7QZX+y8j44bF7AP0jSJdBl6iRhe0MAkvaSqZy+mWg3GaXsrb+eSoHoGDBtaXWEbMVV0iVN2cZ7cQ=="],
+    "@biomejs/cli-darwin-x64": ["@biomejs/cli-darwin-x64@2.5.14", "http://192.168.3.29:34685/@biomejs/cli-darwin-x64/-/cli-darwin-x64-2.5.14.tgz", { "os": "darwin", "cpu": "x64" }, "sha512-kiy8qA16K93J7uvFfWi4LgjqDpnRKyePAna6A0Y4jxyUga35SYpIZ2cNWlhy0lsfgqRenCpfymnJWEZ6mgpRgA=="],
 
-    "@biomejs/cli-linux-arm64": ["@biomejs/cli-linux-arm64@2.5.3", "https://registry.npmmirror.com/@biomejs/cli-linux-arm64/-/cli-linux-arm64-2.5.3.tgz", { "os": "linux", "cpu": "arm64" }, "sha512-ksx1KWeyYW18ILL04msF/J4ZBtBDN33znYK8Z/aNv/vlBVxL9/g3mGP+omgHJKy4+KWbK87vcmmpmurfNjSgiA=="],
+    "@biomejs/cli-linux-arm64": ["@biomejs/cli-linux-arm64@2.5.14", "http://192.168.3.29:34685/@biomejs/cli-linux-arm64/-/cli-linux-arm64-2.5.14.tgz", { "os": "linux", "cpu": "arm64" }, "sha512-vO/9BaU1n30CiFNLx49gMTMtbCAAqlo/EqFoG0BU3deQInTbJrmXSmTQ9e3FoDZIKQnvSLDVNL4lx1ci7y1T1Q=="],
 
-    "@biomejs/cli-linux-arm64-musl": ["@biomejs/cli-linux-arm64-musl@2.5.3", "https://registry.npmmirror.com/@biomejs/cli-linux-arm64-musl/-/cli-linux-arm64-musl-2.5.3.tgz", { "os": "linux", "cpu": "arm64" }, "sha512-fccix0w6xp6csCXgxeC0dU/3ecgRQal0y+cv2SP9ajNlhe7Yrk2Ug7UDe2j9AT9ZDYitkXpvUKgZjjuoYeP4Vg=="],
+    "@biomejs/cli-linux-arm64-musl": ["@biomejs/cli-linux-arm64-musl@2.5.14", "http://192.168.3.29:34685/@biomejs/cli-linux-arm64-musl/-/cli-linux-arm64-musl-2.5.14.tgz", { "os": "linux", "cpu": "arm64" }, "sha512-SJ9PrZkBnnH9dHJDnxk34vKs0GB2dbsioaft6/hPhWJ7AHpwYH83Isnhj0FSRpFkGgpVfJ1lds23ApB2czUDLQ=="],
 
-    "@biomejs/cli-linux-x64": ["@biomejs/cli-linux-x64@2.5.3", "https://registry.npmmirror.com/@biomejs/cli-linux-x64/-/cli-linux-x64-2.5.3.tgz", { "os": "linux", "cpu": "x64" }, "sha512-yMkJtilsgvILDcVkh187aVLTb64xYsrxYajx5kym+r1ULkO5HUOfu9AYKLGQbOVLwJtT2utNw7hhFNg+17mUYA=="],
+    "@biomejs/cli-linux-x64": ["@biomejs/cli-linux-x64@2.5.14", "http://192.168.3.29:34685/@biomejs/cli-linux-x64/-/cli-linux-x64-2.5.14.tgz", { "os": "linux", "cpu": "x64" }, "sha512-VHZRa7CCQBUWKxNwUvHJeuW03WFRgN5NWO//SDGOitc9QIeNyfA42V9zlKm+x82xFSG9Bzi5fi+hbhm9anO8yA=="],
 
-    "@biomejs/cli-linux-x64-musl": ["@biomejs/cli-linux-x64-musl@2.5.3", "https://registry.npmmirror.com/@biomejs/cli-linux-x64-musl/-/cli-linux-x64-musl-2.5.3.tgz", { "os": "linux", "cpu": "x64" }, "sha512-O/yU9YKRUiHhmcjF2f38PSjseVk3G4VLWYc0G2HWpzdBVREV6G8IGWIVEFf7MFPfWIzNUIvPsEjeAZQIOgnLcQ=="],
+    "@biomejs/cli-linux-x64-musl": ["@biomejs/cli-linux-x64-musl@2.5.14", "http://192.168.3.29:34685/@biomejs/cli-linux-x64-musl/-/cli-linux-x64-musl-2.5.14.tgz", { "os": "linux", "cpu": "x64" }, "sha512-2kI5PrMgW5dcEZYrstLPmUmCwkUwZY39rP4BN93Vxbwcs2O57LDQOktUZZYPvvspN5i0mhGr3TJtF5sU26NUWg=="],
 
-    "@biomejs/cli-win32-arm64": ["@biomejs/cli-win32-arm64@2.5.3", "https://registry.npmmirror.com/@biomejs/cli-win32-arm64/-/cli-win32-arm64-2.5.3.tgz", { "os": "win32", "cpu": "arm64" }, "sha512-cX5z+GYwRcqEok0AH3KSfQGgqYd0Nomfp6Fbe1uiTtELE38hdH2k842wQ9wLNaF/JJ7r4rjJQ4VR+ce+fRmQbw=="],
+    "@biomejs/cli-win32-arm64": ["@biomejs/cli-win32-arm64@2.5.14", "http://192.168.3.29:34685/@biomejs/cli-win32-arm64/-/cli-win32-arm64-2.5.14.tgz", { "os": "win32", "cpu": "arm64" }, "sha512-pHgAFffmZtaYoxavEsWEYNvcA7NwOIjLyqw2HXyLbt16xYryX0L4fMV2u0G9ag6LNYPIoqWaWqzUcnc6rLGGXg=="],
 
-    "@biomejs/cli-win32-x64": ["@biomejs/cli-win32-x64@2.5.3", "https://registry.npmmirror.com/@biomejs/cli-win32-x64/-/cli-win32-x64-2.5.3.tgz", { "os": "win32", "cpu": "x64" }, "sha512-ExSaJWi4/u6+GXCszlSKpWSjKNbDseAYqqkCznsCsZ/4uidZ/BEqsCc5/3ctlq6dfIubdIIRSVLC/PG9xPl70Q=="],
+    "@biomejs/cli-win32-x64": ["@biomejs/cli-win32-x64@2.5.14", "http://192.168.3.29:34685/@biomejs/cli-win32-x64/-/cli-win32-x64-2.5.14.tgz", { "os": "win32", "cpu": "x64" }, "sha512-oJWmBhoHsnhUKIke+0gXDX0mltJrWHA1UyHsrTlXwX0TL64ilVZAo+TYZm97baecV0esBdpzy3k96q+09JaZUQ=="],
 
     "@es-proj/configs": ["@es-proj/configs@2.0.1", "https://registry.npmmirror.com/@es-proj/configs/-/configs-2.0.1.tgz", { "peerDependencies": { "@biomejs/biome": "^2.5.3", "typescript": "^7.0.2" }, "optionalPeers": ["@biomejs/biome", "typescript"] }, "sha512-pi1QqHXcJpf/VKgpt9YLYy+T7SM0Ea1oApJbmNMvPUYmBWeyD5VdcksHUeygN0tGQw7zOnw+x0xUMEZoYCKHMA=="],
 
     "@es-proj/utils": ["@es-proj/utils@2.0.1", "https://registry.npmmirror.com/@es-proj/utils/-/utils-2.0.1.tgz", { "dependencies": { "@es-proj/configs": "^2.0.1", "glob": "^13.0.6", "type-fest": "^5.8.0" } }, "sha512-7r3Ppn9ERdM4zf1R3svybxqlco8PbUXr7xpWOF8i5NvBqlA4bAp08BUveVPxXpbkolwbIk8yezE/+JQKkS/bBQ=="],
 
     "@types/node-abi": ["@types/node-abi@3.0.3", "https://registry.npmmirror.com/@types/node-abi/-/node-abi-3.0.3.tgz", {}, "sha512-5oos6sivyXcDEuVC5oX3+wLwfgrGZu4NIOn826PGAjPCHsqp2zSPTGU7H1Tv+GZBOiDUY3nBXY1MdaofSEt4fw=="],
-
-    "@uwsjs/core": ["@uwsjs/core@workspace:packages/core"],
 
     "@uwsjs/darwin-arm64-22": ["@uwsjs/darwin-arm64-22@workspace:packages/darwin-arm64-22"],
 
@@ -152,17 +133,17 @@
 
     "balanced-match": ["balanced-match@4.0.4", "https://registry.npmmirror.com/balanced-match/-/balanced-match-4.0.4.tgz", {}, "sha512-BLrgEcRTwX2o6gGxGOCNyMvGSp35YofuYzw9h1IMTRmKqttAZZVU67bdb9Pr2vUHA8+j3i2tJfjO6C6+4myGTA=="],
 
-    "brace-expansion": ["brace-expansion@5.0.7", "https://registry.npmmirror.com/brace-expansion/-/brace-expansion-5.0.7.tgz", { "dependencies": { "balanced-match": "^4.0.2" } }, "sha512-7oFy703dxfY3/NLxC1fh2SUCQ0H9rmAY+5EpDVfXjUTTs+HEwR2nYaqLv+GWcTsumwxPfiz6CzCNkwXwBUwqCA=="],
+    "brace-expansion": ["brace-expansion@5.0.12", "http://192.168.3.29:34685/brace-expansion/-/brace-expansion-5.0.12.tgz", { "dependencies": { "balanced-match": "^4.0.2" } }, "sha512-YovQ3rzhaLMIrDjNDMkNS01tea93qhEhG5xy8f6+R0l+dw3Ki+5sCoIoI942iuLZTHWogWktgwVDhU09iNEimQ=="],
 
     "glob": ["glob@13.0.6", "https://registry.npmmirror.com/glob/-/glob-13.0.6.tgz", { "dependencies": { "minimatch": "^10.2.2", "minipass": "^7.1.3", "path-scurry": "^2.0.2" } }, "sha512-Wjlyrolmm8uDpm/ogGyXZXb1Z+Ca2B8NbJwqBVg0axK9GbBeoS7yGV6vjXnYdGm6X53iehEuxxbyiKp8QmN4Vw=="],
 
-    "lru-cache": ["lru-cache@11.1.0", "https://registry.npmmirror.com/lru-cache/-/lru-cache-11.1.0.tgz", {}, "sha512-QIXZUBJUx+2zHUdQujWejBkcD9+cs94tLn0+YL8UrCh+D5sCXZ4c7LaEH48pNwRY3MLDgqUFyhlCyjJPf1WP0A=="],
+    "lru-cache": ["lru-cache@11.5.3", "http://192.168.3.29:34685/lru-cache/-/lru-cache-11.5.3.tgz", {}, "sha512-U4N8FgzmWxc8k1VH8Kr6lQg18U7Fjvby6wXHVRX/ZZ7IwWbRMgrRbP0Wrb5q5NVinryp4SQampHKdvtecItxUg=="],
 
-    "minimatch": ["minimatch@10.2.5", "https://registry.npmmirror.com/minimatch/-/minimatch-10.2.5.tgz", { "dependencies": { "brace-expansion": "^5.0.5" } }, "sha512-MULkVLfKGYDFYejP07QOurDLLQpcjk7Fw+7jXS2R2czRQzR56yHRveU5NDJEOviH+hETZKSkIk5c+T23GjFUMg=="],
+    "minimatch": ["minimatch@10.2.6", "http://192.168.3.29:34685/minimatch/-/minimatch-10.2.6.tgz", { "dependencies": { "brace-expansion": "^5.0.8" } }, "sha512-vpLQEs+VLCr1nU0BXS07maYoFwlDAH0gngQuuttxIwutDFEMHq2blX+8vpgxDdK3J1PwjCJiep77OitTZ4Ll1A=="],
 
     "minipass": ["minipass@7.1.3", "https://registry.npmmirror.com/minipass/-/minipass-7.1.3.tgz", {}, "sha512-tEBHqDnIoM/1rXME1zgka9g6Q2lcoCkxHLuc7ODJ5BxbP5d4c2Z5cGgtXAku59200Cx7diuHTOYfSBD8n6mm8A=="],
 
-    "node-abi": ["node-abi@4.33.0", "https://registry.npmmirror.com/node-abi/-/node-abi-4.33.0.tgz", { "dependencies": { "semver": "^7.6.3" } }, "sha512-vLBWCKb+7LWsX+TbfzWOkw0W81m377tyx3hOweBTjO43CXZnRGS1/JPWs20fr0PgZyDXk6ROYrylsEycK8raDA=="],
+    "node-abi": ["node-abi@4.35.0", "http://192.168.3.29:34685/node-abi/-/node-abi-4.35.0.tgz", { "dependencies": { "semver": "^7.6.3" } }, "sha512-ymk4aIzxdPopw2giv8Fs1Ec6vybGkjmyxUwVqhkI4MCy2tVfXdkOGGWieWVjL0THgH+7a8lRdevyupoYj3Js/Q=="],
 
     "path-scurry": ["path-scurry@2.0.2", "https://registry.npmmirror.com/path-scurry/-/path-scurry-2.0.2.tgz", { "dependencies": { "lru-cache": "^11.0.0", "minipass": "^7.1.2" } }, "sha512-3O/iVVsJAPsOnpwWIeD+d6z/7PmqApyQePUtCndjatj/9I5LylHvt5qluFaBT3I5h3r1ejfR056c+FCv+NnNXg=="],
 
@@ -170,6 +151,8 @@
 
     "tagged-tag": ["tagged-tag@1.0.0", "https://registry.npmmirror.com/tagged-tag/-/tagged-tag-1.0.0.tgz", {}, "sha512-yEFYrVhod+hdNyx7g5Bnkkb0G6si8HJurOoOEgC8B/O0uXLHlaey/65KRv6cuWBNhBgHKAROVpc7QyYqE5gFng=="],
 
-    "type-fest": ["type-fest@5.8.0", "https://registry.npmmirror.com/type-fest/-/type-fest-5.8.0.tgz", { "dependencies": { "tagged-tag": "^1.0.0" } }, "sha512-YGYEVz3Fm5iy/AybuA0oyNFq7H4CgQNfRp/qfe8nurE1kuCeNm3/vfm9X4Mtl+qLyaKJUh5xrFZwogr41SMjYA=="],
+    "type-fest": ["type-fest@5.10.0", "http://192.168.3.29:34685/type-fest/-/type-fest-5.10.0.tgz", { "dependencies": { "tagged-tag": "^1.0.0" } }, "sha512-NoSdpq/WEiAg5sjmBkmV/hfxv6HJH4NqPNrqjtSO5CwRmpsDfaf4begxW34KdJykH/l1yHtwBWQkCRdoXO8mPA=="],
+
+    "uWebSockets.js": ["uWebSockets.js@workspace:packages/core"],
   }
 }
